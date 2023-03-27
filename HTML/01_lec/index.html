@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Tanay Vaswani">
+    <meta name="description" content="This page contains all the things I am learing, how to create as I learn HTML">
+
+    <title>My first page</title>
+    <link rel="icon" href="html5.svg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>My goals for the year</h1>
+
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a vacation</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, tenetur.</p>
+
+    <hr>
+
+    <main>
+        <article id="html">
+            <h2># I am ready to earn another million in the upcoming year</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, magnam.</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/html_logo.png" alt="HTML5 Logo" title="I am learning HTML5" width="300">
+                <figure>
+                    <figcaption>This is an example of Java Code</figcaption>
+                    <p>
+                        <code>System.out.println("Hello, World")</code>
+                    </p>
+                </figure>
+            </section>
+
+            <section>
+                <h3>My daily Schedule!!</h3>
+                <p>Let me tell you how</p>
+                <ul>
+                    <li>xyz</li>
+                    <li>xyz</li>
+                    <li>xyz I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>. </li>
+                </ul>
+
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark>number</mark> of hours I code per day?
+                        </summary>
+                        <p>I start at 8AM and I write oce for three hours every morning!</p>
+                    </details>
+                </aside>
+
+                <br>
+
+                <table>
+                    <thead>
+                        <caption>My daily schedule</caption>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Time</th>
+                            <th>Activity</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>Moning</th>
+                            <td>
+                                <time datetime="08:00">8AM</time>-<time datetime="11:00">11AM</time>
+                            </td>
+                            <td>
+                                Write Code
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Afternoon</th>
+                            <td>
+                                <time datetime="11:00">11AM</time>-<time datetime="12:00">12PM</time>
+                            </td>
+                            <td>
+                                Eat Lunch
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Evening</th>
+                            <td rowspan="2">All other time</td>
+                            <td colspan="2">
+                                Hello World
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">This is a footer</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
+
+        <article id="vacation">
+            <h3># I am also planning a vacation</h3>
+            <p>I just thought of needing a break.</p>
+            <p>I live in India, <em>I want to visit a beach.</em></p>
+
+            <p>This is my first webpage</p>
+            <p>Let me tell you how:
+                <br>&nbsp;&nbsp;&nbsp;...I made my first million dollars at the age of 22
+                <br>...How I plan my schedule
+                <br>...How I got into tech and conquered <abbr title="Mozilla Developer Network">MDN</abbr> everthing
+            </p>
+        </article>
+
+        <article id="Contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you.</p>
+
+            <form action="https://httpbin.org/get" method="get">
+
+                <fieldset>
+                    <legend>Personal info</legend>
+                    <p>
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Input your first name here!"
+                            autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Input your last name here!"
+                            autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="favouriteDecade">Favourite Decace:</label>
+                        <input type="number" name="favouriteDecade" id="favouriteDecade" placeholder="0000" min="1950"
+                            max="2020" step="10" value="1980">
+                    </p>
+                    <!-- <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Coffees">
+                            <option value="Regular">Regular</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso Drinks">
+                            <option value="Latte">Latte</option>
+                            <option value="Cappuccino">Cappuccino</option>
+                            <option value="Cortardo">Cortado</option>
+                            <option value="Americino">Americano</option>
+                        </optgroup>
+                    </select>
+                </p> -->
+
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="Regular">Regular</option>
+                            <option value="Iced coffee">Iced Coffee</option>
+                            <option value="Latte">Latte</option>
+                            <option value="Cappuccino">Cappuccino</option>
+                            <option value="Cortardo">Cortado</option>
+                            <option value="Americano">Americano</option>
+                        </datalist>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="Pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="burger" value="burger">
+                        <label for="burger">Burger</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your Message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="60" rows="20"
+                        placeholder="Type your message here!"></textarea>
+                </fieldset>
+                <br>
+
+                <button type="submit">SUBMIT</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">POST</button>
+                <button type="reset">RESET</button>
+            </form>
+        </article>
+    </main>
+
+    <hr>
+
+    <h2># Hello, World!</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, magnam.</p>
+
+    <!-- TODO: Add more places -->
+
+    <h3># Hello, World</h3>
+    <p>Lorem, ipsum dolor <strong>Lorem ipsum dolor sit amet.</strong> sit amet consectetur adipisicing elit.
+        Necessitatibus, saepe!</p>
+
+    <figure>
+        <img src="img/drone-lencois-maranhenses-u7f8lQYBuE0-unsplash.jpg" alt="Image for ref" title="Image2"
+            width="300">
+        <figcaption>Picture of a beach</figcaption>
+    </figure>
+
+    <p> I've heard good things about this location. </p>
+    <address>PSP Area, Plot No. 1, Sector-22, New Delhi, Delhi 110086 </address>
+
+
+
+    <hr>
+
+    <p>This is an ordered list!!</p>
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+
+    <hr>
+
+    <p>
+        This is an unordered list
+    </p>
+
+    <ul>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+        <li>
+            <p>Lorem ipsum dolor sit.</p>
+        </li>
+    </ul>
+
+    <hr>
+
+    <dl>
+        <dt>North Pole</dt>
+        <dd>I hear this is <strong>cold</strong>!</dd>
+
+        <dt>South Pole</dt>
+        <dd>This is also cold.</dd>
+
+        <dt>Mountain Tops</dt>
+        <dd>These are also cold.</dd>
+    </dl>
+
+    <hr>
+
+    <abbr title="Mozilla Developer Network"> <a href="https://developer.mozilla.org/en-US/">MDN</a> </abbr>
+
+    <hr>
+
+    <footer>
+        <p>
+            &lt; &lt; &lt; &copy; <a href="about.html">Tanay Vaswani</a> &gt; &gt; &gt;
+        </p>
+
+        <p>
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
+</body>
+
+</html>

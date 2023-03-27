@@ -1,0 +1,30 @@
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #f0f0f0;
+    color: rebeccapurple;
+}
+
+p {
+    color: #333;
+    background-color: hsl(0, 90%, 80%);
+}
+
+
+
+/* Ways to set color 
+    1. By color name
+    2. rgb(000, 000, 000)
+    3. #______ */
+
+/* colour: #RRGGBB 
+    for red: #FF0000
+    for green: #00FF00
+    for blue: #0000FF */
+
+/*    https://coolors.co/    */
+
+/* Contrast Checker */
+
+

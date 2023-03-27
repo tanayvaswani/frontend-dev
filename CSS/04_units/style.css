@@ -1,0 +1,25 @@
+/*
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+main {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    width: 20ch;
+}

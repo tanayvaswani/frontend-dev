@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    /* text-decoration: ;
+    text-transform: ; */
+    text-align: justify;
+    /* text-indent: 2em;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em; */
+    font-weight: normal;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Alkatra', cursive;
+}
+
+
+/* https://www.cssfontstack.com/ */
+
+/* WE CAN USE @import too */

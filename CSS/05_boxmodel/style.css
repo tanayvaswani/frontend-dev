@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 5px double red;
+    /* border-top: 5px dotted;
+    border-bottom: 10px solid; */
+    font-size: 1.5rem;
+    /* 
+    margin-top: 1.5em;
+    margin-right: 2rem;
+    margin-bottom: 2rem; 
+    margin-left: 2rem; 
+    padding: 1.5rem 2em 2em 2em;
+    
+    border-top-style: solid;  //individual style 
+    border-top-width: 12px;   //individual width
+    border-top-color: blue;   //individual color
+    */
+
+    padding: 1.5rem;
+    margin: 1.5em;
+    outline: 5px solid purple;
+    outline-offset: -12px; /* Positive and Negative both */
+}
+
+.circle {
+    margin: 3rem auto;
+    width: 100px;
+    height: 100px;
+    background-color: goldenrod;
+    border: 2px solid black;
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+    border-radius: 100%;
+}

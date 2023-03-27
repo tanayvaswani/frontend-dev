@@ -1,0 +1,67 @@
+/* Applicable to everywhere */
+/* * {
+    font-family: monospace;
+} */
+
+
+/* Element Selectors */
+html {
+    font-size: 20px;
+}
+
+body {
+
+}
+
+main {
+    font-family: monospace;
+}
+
+p {
+    color: rebeccapurple;
+}
+
+
+/* Class Selectors */
+.gray {
+    color: gray;
+}
+
+
+/* id Selectors: LESS USED!!!! */
+#second {
+    font-style: italic;
+}
+
+/* h1 and h2 group selectors */
+h1, h2 {
+    color: blue;
+}
+
+/* h2 inside in h1 */
+h1 h2 {
+
+}
+
+/* Use span with a class and apply CSS to class */
+/* p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+.highlight {
+    color: black;
+    text-transform: uppercase;
+    background-color: aqua;
+}
+
+/* ------- Specificity of CSS: ID >> Class >> Element -------  */
+
+/* Something goes wrong/doesn't work 
+    put "!important" but don't use it at any cost!!!!! 
+    Instead learn how to optimize your code without using !important flag */
+
+/* Use Specificity calculator mentioned in the description!! */
+
+
+

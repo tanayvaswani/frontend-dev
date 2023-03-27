@@ -1,0 +1,27 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #222222;
+    color: whitesmoke;
+}
+
+a {
+    color: aliceblue;
+}
+
+a:visited {
+    color: lightgray;
+}
+
+a:active, a:hover {
+    color: #eee;
+}
+
+table, td, tr, th, caption {
+    border: 3px solid #eee;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+

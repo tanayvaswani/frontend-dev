@@ -72,6 +72,7 @@ function myFunc() {
   const z = 300;
   {
     var x = 101; // Function Scoped
+    var x = 101111; // Function Scoped
     let y = 201; // Block Scoped
     const z = 301; // Block Scoped
     console.log(`block: ${x}`);
@@ -81,9 +82,6 @@ function myFunc() {
   console.log(`function: ${x}`);
   console.log(`function: ${y}`);
   console.log(`function: ${z}`);
-
 }
 
 myFunc();
-
-

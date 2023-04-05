@@ -30,24 +30,63 @@
 
 // -------------------------------------------------------------
 
-const vehicle = {
-  wheels: 4,
-  engine: function () {
-    return "Vroooommmm!";
-  },
+// const vehicle = {
+//   wheels: 4,
+//   engine: function () {
+//     return "Vroooommmm!";
+//   },
+// };
+
+// const truck = Object.create(vehicle);
+// truck.doors = 2;
+
+// console.log(truck);
+// console.log(truck.wheels); // Inheritance
+// console.log(truck.engine());
+
+// const car = Object.create(vehicle);
+// car.doors = 4;
+// car.engine = function () {
+//   return "Woooooshhhhhh!";
+// };
+
+// console.log(car.engine());
+// console.log(car.wheels);
+
+// const tesla = Object.create(car);
+// tesla.engine = function () {
+//   return "Shhhuussshhh!";
+// };
+// console.log(tesla.wheels);
+// console.log(tesla.engine());
+
+// ----------------------------------------------
+
+const band = {
+  vocals: "Robert Plant",
+  guitar: "Jimmy Page",
+  bass: "John Paul Jones",
+  drums: "John Bonham",
 };
 
-const truck = Object.create(vehicle);
-truck.doors = 2;
+// delete band.drums;
 
-console.log(truck);
-console.log(truck.wheels); // Inheritance
-console.log(truck.engine());
+// console.log(band.hasOwnProperty("drums"));
+// console.log(Object.keys(band));
+// console.log(Object.values(band));
 
-const car = Object.create(vehicle);
-car.doors = 4;
-car.engine = function () {
-  return "Woooooshhhhhh!";
-};
+// for (let job in band) {
+//   console.log(`On ${job}, it's ${band[job]} !`);
+// }
 
-console.log(car.engine());
+// Destructuring Objects
+
+const { vocals, guitar, bass, drums } = band;
+console.log(vocals);
+console.log(guitar);
+
+function sings({ vocals }) {
+  return `${vocals} sings!`;
+}
+
+console.log(sings(band));

@@ -1,0 +1,28 @@
+// Classes in JS
+
+class Pizza {
+  constructor(pizzaSize) {
+    this.size = pizzaSize;
+    this.crust = "original";
+    this.toppings = [];
+  }
+
+  getCrust() {
+    return this.crust;
+  }
+
+  setCrust(pizzaCrust) {
+    this.crust = pizzaCrust;
+  }
+}
+
+class SpecialityPizza extends Pizza {
+  constructor(pizzaSize) {
+    super(pizzaSize);
+    this.type = "The Works";
+  }
+
+  slice() {
+    console.log(`Our ${this.type} ${this.size} pizza has 8 slices.`);
+  }
+}

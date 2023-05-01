@@ -2,7 +2,7 @@
 // datatypes in JS 
 //
 
-console.log("Hello, World");
-console.log(typeof "Tanay");
-console.log(typeof 42);
-console.log(typeof true);
+console.log("Hello, World"); // Print
+console.log(typeof "Tanay"); // String
+console.log(typeof 42); // Number
+console.log(typeof true); // Boolean

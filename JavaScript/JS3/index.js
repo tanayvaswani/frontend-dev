@@ -2,14 +2,14 @@
 const myVariable = "Mathematics";
 
 // Length of string
-console.log(myVariable.length);
-console.log("Every good boy does fine".length);
+console.log(myVariable.length); // length of the variable
+console.log("Every good boy does fine".length); // length of the complete sentence
 
 // charAt method
-console.log(myVariable.charAt(4));
+console.log(myVariable.charAt(4)); // e
 
 // indexOf method
-console.log(myVariable.lastIndexOf(""));
+console.log(myVariable.lastIndexOf(""));  
 
 // slice method
 console.log(myVariable.slice(5, 8));
